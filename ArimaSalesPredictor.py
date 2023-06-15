@@ -10,7 +10,7 @@ from statsmodels.tsa.statespace.sarimax import SARIMAX
 
 # Cargar datos desde un archivo CSV
 #Debe Tener las columnas Year-Semana-TPesos
-df = pd.read_csv(r'', dtype={'Year': str})
+df = pd.read_csv(r'ruta_del_archivo.csv', dtype={'Year': str})
 
 # Convertir 'TPesos' a numérico (por si acaso no lo es)
 df['TPesos'] = pd.to_numeric(df['TPesos'])
